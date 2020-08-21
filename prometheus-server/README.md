@@ -16,3 +16,8 @@
  * 创建config,map作为prometheus-server的rule文件：kubectl apply -f ./prometheus-server/prometheus-server-rule-configmap.yaml
  * 部署prometheus-server-dep：kubectl apply -f ./prometheus-server/prometheus-server-dep.yaml
  * 部署prometheus-server-svc：kubectl apply -f ./prometheus-server/prometheus-server-svc.yaml
+
+查看状态
+```sh
+kubectl get pod -n prometheus-server
+```

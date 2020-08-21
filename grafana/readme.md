@@ -8,11 +8,11 @@ $ kubectl apply -f grafana-svc.yaml
 查看状态
 
 ```sh
-$ kubectl get pods -n kube-ops
+$ kubectl get pods -n grafana
 NAME                       READY   STATUS              RESTARTS   AGE
 grafana-7789685957-jffpn   0/1     ContainerCreating   0          4m22s
 
-$ kubectl describe pod  grafana-7789685957-jffpn -n kube-ops
+$ kubectl describe pod  grafana-7789685957-jffpn -n grafana
 ...
 Events:
   Type    Reason     Age        From                   Message

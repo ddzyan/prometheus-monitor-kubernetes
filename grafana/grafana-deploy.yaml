@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: grafana
-  namespace: kube-ops
+  namespace: grafana
   labels:
     app: grafana
 spec:
